@@ -1,1 +1,12 @@
-<p>dashboard works!</p>
+<div class="dashboard-grid">
+
+    @for(item of stats;let i = $index; track item.label){
+    
+        <app-card [card]="item" [position]="i">
+        </app-card>
+    }
+</div>
+ <!-- [main_icon] = "card.main_icon",
+        [percentage] = "card.percentage",
+        [label] = "card.label",
+        [value] = "card.value" -->

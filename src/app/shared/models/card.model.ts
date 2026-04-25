@@ -1,8 +1,7 @@
 export interface Card_Model{
-    main_icon:String;
-    icon:String;
-    isPositive:boolean;
-    percentage:String;
-    label:String;
+    main_icon:string;
+    isPositive: boolean;
+    percentage:number;
+    label:string;
     value:number;
 }
