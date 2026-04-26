@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { CardService } from '../../service/card';
 import { Card } from '../../../../shared/components/card/card';
 import { Card_Model } from '../../../../shared/models/card.model';
+import { Table } from '../../../../shared/components/table/table';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [Card],
+  imports: [Card, Table],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

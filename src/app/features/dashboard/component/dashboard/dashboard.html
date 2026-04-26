@@ -1,12 +1,10 @@
 <div class="dashboard-grid">
+        @for(item of stats;let i = $index; track item.label){    
+            <app-card [card]="item" [position]="i">
+            </app-card>
+        }
 
-    @for(item of stats;let i = $index; track item.label){
-    
-        <app-card [card]="item" [position]="i">
-        </app-card>
-    }
+    <!-- <div class="tableList"> -->
+        <app-table></app-table>
+    <!-- </div> -->
 </div>
- <!-- [main_icon] = "card.main_icon",
-        [percentage] = "card.percentage",
-        [label] = "card.label",
-        [value] = "card.value" -->
