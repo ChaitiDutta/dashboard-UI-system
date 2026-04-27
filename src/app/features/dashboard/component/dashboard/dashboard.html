@@ -1,10 +1,15 @@
 <div class="dashboard-grid">
+    <div class="grid-col">
         @for(item of stats;let i = $index; track item.label){    
             <app-card [card]="item" [position]="i">
             </app-card>
         }
+    </div>
 
     <!-- <div class="tableList"> -->
-        <app-table></app-table>
+        <!-- @for(item of tableData; track item.name){ -->
+            <app-table [dataSource]="tableData"></app-table>
+
+        <!-- } -->
     <!-- </div> -->
 </div>

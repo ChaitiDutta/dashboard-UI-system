@@ -5,8 +5,8 @@ export interface Table_Model{
     status:StatusData,
     date: Date
 }
-export interface StatusData{
-    completed : 'Y',
-    pending : 'H',
-    shipped : 'R'
+export enum StatusData{
+    Completed = 'Y',
+    Pending = 'H',
+    Shipped = 'R'
 }

@@ -1,0 +1,21 @@
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 22px;
+  /* color: #fff; */
+  /* font-weight: 500; */
+  text-align: center;
+  display: inline-block;
+  min-width: 80px;
+}
+.green{
+    color: rgb(61, 202, 61);
+    background-color: rgb(189, 230, 189);
+}
+.yellow{
+    color: rgb(194, 133, 54);
+    background-color: rgb(227, 207, 182);
+}
+.blue{
+    color: rgb(67, 166, 199);
+    background-color: rgb(205, 231, 240);
+}
