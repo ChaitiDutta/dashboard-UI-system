@@ -19,3 +19,22 @@
     color: rgb(67, 166, 199);
     background-color: rgb(205, 231, 240);
 }
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+/* Header cells */
+.custom-table th.mat-header-cell {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+  padding: 12px;
+}
+
+/* Data cells */
+.custom-table td.mat-cell {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px;
+}
