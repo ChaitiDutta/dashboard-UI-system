@@ -1,7 +1,10 @@
 <!-- <p>activity-table works!</p> -->
 <mat-list>
-    <mat-list-item>Item 1</mat-list-item>
-    <mat-divider></mat-divider>
-     <mat-list-item>Item 2</mat-list-item>
-    <mat-divider></mat-divider>
+    
+    <mat-list-item style="left: 25px;">
+        <strong style="margin-right: 7px;">{{activity().user}}</strong>
+        <span>{{activity().action}}</span>
+        <p class="time">{{activity().time}}</p>
+    </mat-list-item>
+    <!-- <mat-divider></mat-divider> -->
 </mat-list>

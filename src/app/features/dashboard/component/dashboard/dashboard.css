@@ -28,13 +28,13 @@
 }
 @media (min-width : 48rem) {
   .table-grid  {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 }
 
 @media (min-width : 64rem) {
   .table-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -48,4 +48,25 @@ h3 {
   padding: 0.5rem;
   justify-self: anchor-center;
   /* } */
+}
+.dot{
+  display: flex;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: relative;
+    left: 21px;
+    top: 22px;
+}
+.green{
+    background: #aaf6c6;
+}
+.blue{
+  background: rgb(191, 191, 253);
+}
+.orange{
+  background: rgb(249, 223, 173);
+}
+.red{
+  background: rgb(250, 182, 182);
 }

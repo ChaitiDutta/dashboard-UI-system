@@ -14,8 +14,17 @@
         </div>
         <div style="border-radius: 10px;
     border: 2px solid #ccc;">
-     <h3 class="table_title">Activity Users</h3>
-            <app-activity-table></app-activity-table>
+     <h3 class="table_title">Recent Activity</h3>
+     @for(item of activityList; track item.id){
+        <span class="dot"
+    [class.green] = "item.type == 'purchase'"
+     [class.blue] = "item.type == 'signup'"
+     [class.orange] = "item.type == 'update'"
+     [class.red] = "item.type == 'refund'">.
+</span>
+         <app-activity-table [activity] = item></app-activity-table>
+
+     }
         </div>
     </div>
 
