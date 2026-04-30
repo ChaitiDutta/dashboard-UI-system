@@ -21,7 +21,21 @@
   }
 }
 
-.table-grid {}
+.table-grid {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width : 48rem) {
+  .table-grid  {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width : 64rem) {
+  .table-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 h3 {
   /* .table-title { */

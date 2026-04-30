@@ -6,10 +6,11 @@ import { Table } from '../../../../shared/components/table/table';
 import { Table_Model } from '../../../../shared/models/table.model';
 import { CommonModule } from '@angular/common';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { ActivityTable } from '../../../../shared/components/activity-table/activity-table';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [Card, Table, CommonModule],
+  imports: [Card, Table, CommonModule,ActivityTable],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
