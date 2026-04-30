@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { Table_Model } from '../../models/table.model';
 
 @Component({
   selector: 'app-activity-table',
@@ -8,4 +9,6 @@ import { MatListModule } from '@angular/material/list';
   templateUrl: './activity-table.html',
   styleUrl: './activity-table.css',
 })
-export class ActivityTable {}
+export class ActivityTable {
+  name = input.required<Table_Model>();
+}

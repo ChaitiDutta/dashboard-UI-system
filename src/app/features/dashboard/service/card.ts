@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Card_Model } from '../../../shared/models/card.model';
-import { StatusData, Table_Model } from '../../../shared/models/table.model';
+import { ActivityList, StatusData, Table_Model } from '../../../shared/models/table.model';
 @Injectable({
   providedIn: 'root',
 })
@@ -74,5 +74,45 @@ getTable(): Table_Model[]{
   }
 ]
 }
+
+ getActivities(): ActivityList[] {
+    return [
+      {
+        id: 1,
+        user: 'John Doe',
+        action: 'made a purchase of $1,299',
+        time: '2 minutes ago',
+        type: 'purchase'
+      },
+      {
+        id: 2,
+        user: 'Sarah Smith',
+        action: 'signed up for newsletter',
+        time: '15 minutes ago',
+        type: 'signup'
+      },
+      {
+        id: 3,
+        user: 'Mike Johnson',
+        action: 'updated shipping address',
+        time: '1 hour ago',
+        type: 'update'
+      },
+      {
+        id: 4,
+        user: 'Emily Brown',
+        action: 'made a purchase of $159',
+        time: '2 hours ago',
+        type: 'purchase'
+      },
+      {
+        id: 5,
+        user: 'David Lee',
+        action: 'requested refund',
+        time: '3 hours ago',
+        type: 'refund'
+      }
+    ];
+  }
 
 }

@@ -10,3 +10,11 @@ export enum StatusData{
     Pending = 'H',
     Shipped = 'R'
 }
+
+export interface ActivityList{
+    id: number,
+    user: string,
+    action: string,
+    time: string,
+    type : 'purchase'|'signup'|'update'|'refund',
+}
