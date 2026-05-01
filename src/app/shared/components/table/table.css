@@ -8,15 +8,15 @@
   min-width: 80px;
 }
 .green{
-    color: rgb(61, 202, 61);
+    color: rgb(5, 120, 5);
     background-color: rgb(189, 230, 189);
 }
 .yellow{
-    color: rgb(194, 133, 54);
+    color: rgb(142, 84, 9);
     background-color: rgb(227, 207, 182);
 }
 .blue{
-    color: rgb(67, 166, 199);
+    color: rgb(12, 96, 123);
     background-color: rgb(205, 231, 240);
 }
 .custom-table {

@@ -7,10 +7,11 @@ import { ActivityList, Table_Model } from '../../../../shared/models/table.model
 import { CommonModule } from '@angular/common';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { ActivityTable } from '../../../../shared/components/activity-table/activity-table';
+import { SaleDetails } from '../../../../shared/components/sale-details/sale-details';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [Card, Table, CommonModule,ActivityTable],
+  imports: [Card, Table, CommonModule,ActivityTable, SaleDetails],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
