@@ -1,14 +1,28 @@
-<p>sale-details works!</p>
-<h2 mat-dialog-title>Hello</h2>
+<!-- <p>sale-details works!</p> -->
+<h2 mat-dialog-title>Sale Details</h2>
+<mat-divider></mat-divider>
 <mat-dialog-content>
-    <mat-list>
+    <mat-list style="    display: grid;
+    gap: 20px;">
         <mat-list-item>
-            <p class="title">Item1</p>
-            <strong>Laptop device</strong>
+            <p class="title">Customer</p>
+            <strong>{{tableData.name}}</strong>
+        </mat-list-item>
+        <mat-list-item>
+            <p class="title">Product</p>
+            <strong>{{tableData.product}}</strong>
+        </mat-list-item>
+        <mat-list-item>
+            <p class="title">Amount</p>
+            <strong>{{tableData.amount | currency}}</strong>
+        </mat-list-item>
+        <mat-list-item>
+            <p class="title">Status</p>
+            <strong>{{this.status.getStatusCode(tableData.status)}}</strong>
         </mat-list-item>
     </mat-list>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
-     <button mat-button>Save</button>
+     <button mat-button matButton="filled">Save</button>
 </mat-dialog-actions>
